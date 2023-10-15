@@ -16,7 +16,7 @@ app.use(bodyParser.json());
 // const frontendPort = process.env.FRONTEND_PORT;
 
 // Initializing backend port
-const backendPort = process.env.BACKEND_PORT;
+const backendPort = process.env.BACKEND_PORT || 3000;
 
 // Initializing backend server IP
 // const backendURL = `http://${process.env.EC2_IP_ADDRESS}:${backendPort}`;
@@ -196,27 +196,3 @@ app.all('/changeItemStatus/:id', async function(req, res, next) {
 // Starting Node server
 app.listen(backendPort);
 console.log(`Server started at http://localhost:${backendPort}`);
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
