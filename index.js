@@ -16,7 +16,7 @@ app.use(bodyParser.json());
 // const frontendPort = process.env.FRONTEND_PORT;
 
 // Initializing backend port
-const backendPort = process.env.BACKEND_PORT ? process.env.BACKEND_PORT : 3001;
+const backendPort = process.env.BACKEND_PORT || 3000;
 
 // Initializing backend server IP
 // const backendURL = `http://${process.env.EC2_IP_ADDRESS}:${backendPort}`;
