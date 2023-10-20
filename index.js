@@ -12,14 +12,8 @@ app.use(cors({
 }));
 app.use(bodyParser.json());
 
-// Initializing frontend port
-// const frontendPort = process.env.FRONTEND_PORT;
-
 // Initializing backend port
-const backendPort = process.env.BACKEND_PORT || 3000;
-
-// Initializing backend server IP
-// const backendURL = `http://${process.env.EC2_IP_ADDRESS}:${backendPort}`;
+const backendPort = 3000;
 
 // Defining todoList JSON data list
 let todoList = {
@@ -195,4 +189,3 @@ app.all('/changeItemStatus/:id', async function(req, res, next) {
 
 // Starting Node server
 app.listen(backendPort);
-console.log(`Server started at http://localhost:${backendPort}`);
