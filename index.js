@@ -1,4 +1,5 @@
 // Importing the express server and CORS packages
+import keys from './keys.json' assert {type: 'json'};
 import bodyParser from 'body-parser';
 import express from 'express';
 import cors from 'cors';
@@ -13,7 +14,7 @@ app.use(cors({
 app.use(bodyParser.json());
 
 // Initializing backend port
-const backendPort = 3000;
+const backendPort = keys.backendPort;
 
 // Defining todoList JSON data list
 let todoList = {
