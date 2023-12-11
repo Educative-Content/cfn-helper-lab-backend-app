@@ -23,7 +23,7 @@ let todoList = {
     '2': { 'id': '2', 'task': 'Make a to-do list.', 'status': false },
 };
 
-// The following function return todo item list array
+// The following function return to-do item list array
 async function allItems() {
     const todoListArray = Object.keys(todoList).map(function(id) { return todoList[id] });
     return todoListArray;
@@ -89,7 +89,7 @@ app.all('/', async function(req, res, next) {
     next();
 });
 
-// The following API call return todo item list array
+// The following API call return to-do item list array
 app.all('/allItems', async function(req, res, next) {
     try {
         const todoListData = await allItems();
@@ -106,7 +106,7 @@ app.all('/allItems', async function(req, res, next) {
     next();
 });
 
-// The following API call clears all todo list items
+// The following API call clears all to-do list items
 app.all('/clearItems', async function(req, res, next) {
     try {
         await clearItems();
