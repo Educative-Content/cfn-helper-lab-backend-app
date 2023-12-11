@@ -20,7 +20,7 @@ const backendPort = keys.backendPort;
 let todoList = {
     '0': { 'id': '0', 'task': 'Learn about CloudFormation helper scripts.', 'status': false },
     '1': { 'id': '1', 'task': 'Launch server on EC2 instance.', 'status': true },
-    '2': { 'id': '2', 'task': 'Make a todo list.', 'status': false },
+    '2': { 'id': '2', 'task': 'Make a to-do list.', 'status': false },
 };
 
 // The following function return todo item list array
