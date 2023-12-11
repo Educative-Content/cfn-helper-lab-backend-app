@@ -29,7 +29,7 @@ async function allItems() {
     return todoListArray;
 };
 
-// The following function clears all todo list items
+// The following function clears all to-do list items
 async function clearItems() {
     todoList = {};
 };
